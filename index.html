@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncie seu carro aqui</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>Anuncie seu veículo e encontre pessoas interessadas!</h1>
+        </div>
+        <div class="form-container">
+            <div class="title-form">
+                <h3>Formulário</h3>
+                <h2>Venda seu veículo!</h2>
+                <p>Descreva as características e marque os opcionais que ele possui.</p>
+            </div>
+            <div class="form">
+                <label for="ad-title">Título do anúncio:</label>
+                <input type="text" name="ad-title" placeholder="Um título para aparecer no anúncio do seu carro" required>
+
+                <label for="car-price">Valor:</label>
+                <input type="text" name="car-price" placeholder="Defina um preço" required>
+
+                <label for="car-description">Descrição:</label>
+                <textarea name="car-description" placeholder="Aqui você descreve os detalhes do veículo, por exemplo se ele tem algum arranhão" required></textarea>
+
+                <label for="marca-carro">Marca:</label>
+                <input type="text" name="marca-carro" placeholder="Digite a marca do veículo" required>
+
+                <label for="car-model">Modelo:</label>
+                <input type="text" name="car-model" placeholder="Digite o modelo do veículo" required>
+
+                <label for="km">Quilometragem:</label>
+                <input type="text" name="km" placeholder="Digite a quantidade de Km rodados" required>
+
+                <label for="buy-date">Data da compra:</label>
+                <input type="date" name="buy-date" required>
+
+                <label for="car-gearbox">Câmbio:</label>
+                <input type="radio" name="car-gearbox" value="manual">
+                <label for="manual">Manual</label>
+                <input type="radio" name="car-gearbox" value="automatico">
+                <label for="automatico">Automático</label>
+
+                <label for="optional">Opcionais:</label>
+                <div class="checkbox-lado-a">
+                    <input type="checkbox" name="optional[]" value="airbag">
+                    <label for="airbag">Airbag</label>
+                    <input type="checkbox" name="optional[]" value="alarme">
+                    <label for="alarme">Alarme</label>
+                    <input type="checkbox" name="optional[]" value="ar-condicionado">
+                    <label for="ar-condicionado">Ar Condicionado</label>
+                    <input type="checkbox" name="optional[]" value="camera-re">
+                    <label for="camera-re">Câmera de ré</label>
+                </div>
+                <div class="checkbox-lado-b">
+                    <input type="checkbox" name="optional[]" value="assistente-pista">
+                    <label for="assistente-pista">Assistente de pista</label>
+                    <input type="checkbox" name="optional[]" value="partida-keyless">
+                    <label for="partida-keyless">Partida Keyless</label>
+                    <input type="checkbox" name="optional[]" value="integracao-celular">
+                    <label for="integracao-celular">Integração com celular</label>
+                    <input type="checkbox" name="optional[]" value="banco-couro">
+                    <label for="banco-couro">Banco de couro</label>
+                </div>
+
+                <label for="image-car">Fotos do carro:</label>
+                <input type="file" name="image-car" required>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
