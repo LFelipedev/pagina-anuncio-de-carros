@@ -74,7 +74,9 @@
                             <label for="camera-re">Câmera de ré</label>
                             </li>
                         </ul>
-                        <ul class="optional-box">
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
                             <li>
                                 <input type="checkbox" name="optional[]" value="assistente-pista">
                                 <label for="assistente-pista">Assistente de pista</label>
@@ -95,10 +97,10 @@
                     </div>
                     <div class="box-input"></div>
                         <label for="image-car">Fotos do carro: <span class="riquired-field">*</span></label>
-                        <input type="file" name="image-car" multiple accept="image/jpg" required>
+                        <input type="file" name="image-car" class="block" multiple accept="image/jpg" required>
                     </div>
-                    <input type="reset" value="Apagar">
-                    <input type="submit" value="Enviar">
+                        <input type="reset" value="Apagar" class="btn">
+                        <input type="submit" value="Enviar" class="btn"/>
                 </div>
             </form>
         </div>

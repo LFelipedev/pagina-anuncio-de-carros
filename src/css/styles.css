@@ -3,10 +3,14 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
 body{
     background-color: #f0ebf8;
+}
+
+.riquired-field{
+    color: #f00;
 }
 
 h1,
@@ -16,17 +20,21 @@ h4,
 h5,
 h6{
     color: #333;
+    padding: 15px 0;
 }
 
 p,
 label{
     color: #444;
+    padding: 5px 0;
+    margin: 5px 0;
 }
 
 input {
     border: none;
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
+    margin: 10px 0;
 }
 
 input[type="text"],
@@ -42,7 +50,7 @@ textarea{
 }
 
 .header{
-    background-color: #673ab7;
+    background-color: #b73a3a;
     height: 200px;
     padding: 20px;
 }
@@ -57,18 +65,26 @@ textarea{
 
 .form-header h2{
     border-top: 1px solid #dfdfdf;
+    margin-bottom: 15px;
+    font-size: 40px;
 }
 
 .form-header h3{
     height: 45px;
     width: 150px;
-    border-bottom: 3px solid #673ab7;
-    color: #673ab7;
+    border-bottom: 3px solid #b73a3a;
+    color: #b73a3a;
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
     line-height: 45px;
 }
+
+.form-header p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
 
 .form-container{
     background-color: #fdfdfd;
@@ -80,5 +96,39 @@ textarea{
     padding: 30px;
 }
 
+.box-input{
+    margin: 30px 0;
+}
+
+.block{
+    display: block;
+}
+
+.optional-box{
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.optional-list li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.btn{
+    background-color: #b73a3a;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #fff;
+    border-color: #b73a3a;
+    color: #b73a3a;
+}
 
 
